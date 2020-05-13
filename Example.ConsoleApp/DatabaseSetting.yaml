@@ -1,0 +1,29 @@
+﻿Type: Example.ConsoleApp.DatabaseSetting, Example.ConsoleApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+AString: '{20d3e1f4-46ec-4b12-8c6b-b3b4db7ff21f}'
+BString: '{2D71112A-9556-49D4-82FC-A432122C3699}'
+DateTime: 2016-03-14T04:53:37.9151499+08:00
+Int: 689
+UInt: 29606
+Short: 235
+UShort: 189
+Float: 0.57718491554260254
+Decimal: 0.625484345772064
+Double: 0.88479838002696554
+Byte: 174
+Bytes:
+- 18
+- 67
+- 231
+- 79
+- 111
+- 198
+- 16
+- 68
+- 150
+- 204
+- 243
+- 112
+- 145
+- 50
+- 129
+- 194

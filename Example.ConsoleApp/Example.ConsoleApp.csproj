@@ -6,17 +6,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NKnife.Sweetting\NKnife.Sweetting.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Content\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Autofac" Version="5.1.4" />
     <PackageReference Include="ConsoleMenuLib" Version="3.3.0" />
-    <PackageReference Include="Dapplo.Config" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Autofac.YamlOption\Autofac.YamlOption.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="DatabaseSetting.yaml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="CoderSetting.yaml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
