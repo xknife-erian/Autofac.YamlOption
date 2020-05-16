@@ -19,7 +19,11 @@ namespace Autofac
                 if (!File.Exists(fileName))
                     break;
                 var content = File.ReadAllText(fileName);
-                var optionName = fileName.Substring(0, fileName.LastIndexOf('.'));
+                var start = fileName.LastIndexOf(Path.DirectorySeparatorChar) + 1;
+                if (start < 0)
+                    start = 0;
+                var end = fileName.LastIndexOf('.');
+                var optionName = fileName.Substring(start, end - start);
                 _YamlContentMap.Add(optionName, content);
             }
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Autofac;
@@ -11,10 +12,12 @@ namespace Example.ConsoleApp
 {
     public class Program
     {
+        public static readonly string DatabaseSettingFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "DatabaseSetting.yaml");
+
         public static async Task Main(string[] args)
         {
             var container = new ContainerBuilder();
-            container.RegisterOptionYamlFiles("CoderSetting.yaml", "DatabaseSetting.yaml")
+            container.RegisterOptionYamlFiles("CoderSetting.yaml", DatabaseSettingFilePath)
                 .RegisterOption<CoderSetting>()
                 .RegisterOption<DatabaseSetting>();
             container.RegisterType<ConsoleMenuRunner>();
