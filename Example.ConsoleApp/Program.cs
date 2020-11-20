@@ -49,19 +49,19 @@ namespace Example.ConsoleApp
             Console.WriteLine(_coderSetting.SqlSettings[0].Type.ToString());
             Console.WriteLine(_coderSetting.SqlSettings[0].AString);
             Console.WriteLine(_coderSetting.SqlSettings[0].BString);
-            Console.WriteLine(_coderSetting.SqlSettings[0].DateTime.ToString());
+            Console.WriteLine(_coderSetting.SqlSettings[0].DateTime.ToString("u"));
             Console.WriteLine(_coderSetting.SqlSettings[0].Byte.ToString());
             context.UserInterface.Info("---");
             Console.WriteLine(_coderSetting.DatabaseSettings[0].Type.ToString());
             Console.WriteLine(_coderSetting.DatabaseSettings[0].AString);
             Console.WriteLine(_coderSetting.DatabaseSettings[0].BString);
-            Console.WriteLine(_coderSetting.DatabaseSettings[0].DateTime.ToString());
+            Console.WriteLine(_coderSetting.DatabaseSettings[0].DateTime.ToString("u"));
             Console.WriteLine(_coderSetting.DatabaseSettings[0].Byte.ToString());
             context.UserInterface.Info("---");
             Console.WriteLine(_coderSetting.DatabaseSettingMap.Values.ElementAt(0).Type.ToString());
             Console.WriteLine(_coderSetting.DatabaseSettingMap.Values.ElementAt(0).AString);
             Console.WriteLine(_coderSetting.DatabaseSettingMap.Values.ElementAt(0).BString);
-            Console.WriteLine(_coderSetting.DatabaseSettingMap.Values.ElementAt(0).DateTime.ToString());
+            Console.WriteLine(_coderSetting.DatabaseSettingMap.Values.ElementAt(0).DateTime.ToString("u"));
             Console.WriteLine(_coderSetting.DatabaseSettingMap.Values.ElementAt(0).Byte.ToString());
         }
 
